@@ -23,6 +23,8 @@ public:
     
 private:
     
+    const string shutdonwScript = "osascript -e \'tell app \"System Events\" to shut down\'";
+    
     ofxTransparentWindow transparent;
     ofxOscReceiver rcv;
     string disp;

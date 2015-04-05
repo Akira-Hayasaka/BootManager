@@ -30,6 +30,11 @@ void ofApp::update()
             disp = "boot";
             ofSystem("open ../../../../../SonyShowRoom/bin/SonyShowRoom.app");
         }
+        else if (m.getAddress() == "/shutdown")
+        {
+            disp = "shutdown";
+            ofSystem(shutdonwScript);
+        }
     }
 }
 
