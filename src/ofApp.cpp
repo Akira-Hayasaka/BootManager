@@ -1,5 +1,6 @@
 #include "ofApp.h"
 
+
 void ofApp::setup()
 {
     
@@ -8,13 +9,14 @@ void ofApp::setup()
     rcv.setup(8999);
     disp = "none";
     
+    pbd.setup();
     transparent.afterMainSetup(ofxTransparentWindow::NORMAL);
 }
 
 void ofApp::update()
 {
     transparent.update();
-    
+
     while (rcv.hasWaitingMessages())
     {
         ofxOscMessage m;
@@ -40,8 +42,11 @@ void ofApp::update()
 
 void ofApp::draw()
 {
-//    ofDrawBitmapString(disp, 10, 20);
+    ofDrawBitmapString(disp, 10, 20);
+    ofDrawBitmapString(ofToString(ofGetFrameRate()), 10, 40);
 }
+
+
 
 void ofApp::keyPressed(int key){}
 void ofApp::keyReleased(int key){}

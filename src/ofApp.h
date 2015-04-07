@@ -3,6 +3,7 @@
 #include "ofMain.h"
 #include "ofxTransparentWindow.h"
 #include "ofxOsc.h"
+#include "PowerButtonDetector.h"
 
 class ofApp : public ofBaseApp
 {
@@ -22,6 +23,8 @@ public:
     void gotMessage(ofMessage msg);
     
 private:
+    
+    PowerButtonDetector pbd;
     
     const string shutdonwScript = "osascript -e \'tell app \"System Events\" to shut down\'";
     
