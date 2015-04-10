@@ -35,7 +35,8 @@ void ofApp::update()
         else if (m.getAddress() == "/shutdown")
         {
             disp = "shutdown";
-            ofSystem(shutdonwScript);
+//            ofSystem(shutdonwScript);
+            ofSystem("echo showroom | sudo -S shutdown -h now");            
         }
     }
 }

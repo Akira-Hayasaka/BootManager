@@ -21,8 +21,7 @@ static void onPwrBtnPressed(CFNotificationCenterRef center,
 {
     ofLog() << "Power Button Pressed";
 //    ofSystem(shutdonwScript);
-//    ofSystem("shutdown -h");
-    ofSystem("echo doraemon | sudo -S shutdown -h now");
+    ofSystem("echo showroom | sudo -S shutdown -h now");
 }
 
 
