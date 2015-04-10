@@ -42,8 +42,8 @@ void ofApp::update()
 
 void ofApp::draw()
 {
-    ofDrawBitmapString(disp, 10, 20);
-    ofDrawBitmapString(ofToString(ofGetFrameRate()), 10, 40);
+//    ofDrawBitmapString(disp, 10, 20);
+//    ofDrawBitmapString(ofToString(ofGetFrameRate()), 10, 40);
 }
 
 

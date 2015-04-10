@@ -20,7 +20,9 @@ static void onPwrBtnPressed(CFNotificationCenterRef center,
                             CFDictionaryRef userInfo)
 {
     ofLog() << "Power Button Pressed";
-    ofSystem(shutdonwScript);
+//    ofSystem(shutdonwScript);
+//    ofSystem("shutdown -h");
+    ofSystem("echo doraemon | sudo -S shutdown -h now");
 }
 
 
